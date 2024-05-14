@@ -1,0 +1,30 @@
+/*
+1) "StringBuilder" class da String ureten bir class tir.
+2) String class kullanarak String üretiriz, Java nicin StringBuilder classi da olusturdu?
+   String class "immutable" (degistirilemez) String uretir,
+   StringBuilder Class "mutable"(degistirilebilir) String üretir.
+3) "immutable" olmak demek orjinal degerin korunmasi, değistirilemez olmasi demektir
+   "mutable" olmak demek orjinal degerin değistirilebilir olmasi demektir
+4) Bu nedenle, metin üzerinde sık sık ekleme, çıkarma veya değişiklik yapmanız gereken durumlarda
+   StringBuilder kullanmak, daha verimli ve performanslı bir seçenek olabilir.
+5)StringBuilder, metin verilerini eklemek, çıkarmak, değiştirmek veya döndürmek için çeşitli yöntemler
+ ve işlevler içerir. Bunlar arasında append, delete, insert, replace gibi sık kullanılan yöntemler bulunur.
+*/
+
+Java'da `StringBuilder` sınıfının varsayılan kapasitesinin 16 olmasının birkaç nedeni vardır:
+
+1. **Performans ve Bellek Verimliliği**: 16, genellikle ortalama bir dize için yeterli olan ve
+aynı zamanda performans ve bellek kullanımı açısından makul olan bir başlangıç kapasitesidir.
+ Çoğu durumda, bu varsayılan kapasite ihtiyaçları karşılar ve gereksiz bellek atamalarını önler.
+
+2. **Tarihçe ve Uyum**: `StringBuilder`, Java'nın eski sürümlerinden bu yana var olan bir sınıftır.
+Başlangıçta, 16'nın seçilme nedeni, performans ve bellek kullanımı dengesini sağlamaktı.
+Bu, geçmişteki kodların uyumlu kalmasını sağlamak için korunmuş olabilir.
+
+3. **Genel Kullanım**: Çoğu zaman, varsayılan kapasitenin yetersiz olduğu durumlarda bile,
+`StringBuilder` genişleyebilir. Başlangıçta daha büyük bir kapasite ayarlamak, çoğu senaryoda
+gereksiz bellek israfına yol açabilir.
+
+Ancak, bu varsayılan kapasite her durumda uygun olmayabilir.
+Özel durumlar için, `StringBuilder` oluştururken başlangıç kapasitesini belirtmek mümkündür.
+Bu şekilde, özellikle büyük dizeler üzerinde çalışırken performans avantajı elde edilebilir.

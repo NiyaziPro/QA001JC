@@ -1,0 +1,6 @@
+/*
+forloop: dongu sayisi belliyse kullanırız
+whileLoop: dongu sayisi belli degilse bunu kullanırız
+do whileLoop: en az bir kere calismasini istedigimi fakat dongu sayisi belli olmayan yapılarda kullanırım
+ */
+

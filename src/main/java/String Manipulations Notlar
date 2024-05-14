@@ -1,0 +1,34 @@
+toLowerCase-toUpperCase:    buyuk ya da kucuk harf yapmayi saglar
+
+equals-equalsIgnoreCase:    esit mi diye kontrol eder (ıgnore case buyuk kucuk farketmeksizin kontrol eder)
+
+split:                      stringi girilen karakterden 2'ye bolmeyi saglar
+
+trim:                       bastaki ve sondaki bosluklar siler
+
+subString:                  ilk indexten ikinci index'e kadar(ikinci index dahil degildir),
+                            eger ikinci index girilmezse sonuna kadar gider
+
+startsWith:                 ne ile basladigini kontrol eder
+
+endsWith:                   ne ile bittigini kontrol eder
+
+lenght:                     karakter sayisini verir
+
+charAt:                     icine girilen indexinin karakterini dondurur
+
+concat:                     birlestirme islemi yapar
+
+indexOf:                    icine girilen karakterin indexini verir
+
+lastIndexOf:                icine girilen karakterin son indexini verir
+
+replace-replaceAll:         icindeki karakterleri degistirmeyi saglar
+
+valueOf:                    variable'lari birbirine donusturmeyi saglar
+
+isEmpty:                    hiclik mi diye kontrol eder
+
+isBlank:                    hiclik mi ve bosluk mu diye kontrol eder
+
+contains:                   icerme durumu kontrol eder

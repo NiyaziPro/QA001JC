@@ -1,0 +1,8 @@
+
+
+fori dongusunu arraylarde indexlerle isimiz oldugu zaman kullaniriz
+cunku fori dongusu index uzerinden ilerleme saglar
+
+
+eger bizim indexlerde herhangi bir isimiz yoksa foreach dongusu kullanırız cunku
+foreach dongusu indexler icine girmeden direkt elemanlari gezer

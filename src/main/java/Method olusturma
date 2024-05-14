@@ -1,0 +1,7 @@
+Method Creation - Metot Olusturma
+        Java'da method nasil olusturulur?
+
+        1-main method'un disinda, class'in icinde olusturulur
+        2-Syntax'i: Access Modifier + Return Type + Method ismi + () + {}
+        3-Olusturulan method nasil kullanilir?
+            Main icinden method cagrisi yapilmalidir. Buna method Call denir.
