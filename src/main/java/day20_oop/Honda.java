@@ -1,0 +1,16 @@
+package day20_oop;
+
+public class Honda extends Car{
+    String model = "Civic";
+    public int year = 2023;
+
+    public Honda (){
+        System.out.println("super.model = " + super.model);
+        System.out.println("this.year = " + this.year);
+        System.out.println("Civic");
+    }
+    public Honda (String model){
+        super("Hatchback");
+        System.out.println(model);
+    }
+}

@@ -1,0 +1,78 @@
+Object Yönelimli Programlamanın Faydaları:
+1) Object oluşturma bir Class içerisinde toplanır ve tüm projelerde kullanılabilirliğe olanak sağlar.(String gibi)
+2) Class'larin 1 kez oluşturulması sayesinde uzun kodları tekrardan yazmak yerine kısa kodlamalar
+ile çalıştırılabilir. Substring() method'u 1 kere yazilmis ama surekli kullanabiliyoruz.
+3) Uzun kodların tekrar yazılmasının engellenmesi sayesinde geliştirme süreci kısalır.
+4) Object'ler birbirinden bağımsız olduğundan bilgi gizliliği konusunda avantaj sağlar.
+5) Class'lar sayesinde tüm projelerde değişiklik yapmak yerine tek bir class' ta değişiklik
+yapılıp tüm projelerde çalışması sağlanır. Bu zaman kaybını büyük ölçüde azaltır.*/
+
+OOP'leri 4 temel özellikte inceleyebiliriz.
+            1. Inheritance - Miras Alma
+            2. Polymorphism - Çok Biçimlilik
+            3. Encapsulation - Kapsülleme
+            4. Abstraction - Soyutlama
+
+
+
+    1. Inheritance - Miras Alma - extends dedigimiz keyword ile kullanilir
+
+    Java programlama dilinde "inheritance" (miras alma) bir nesne yönelimli programlama (OOP) kavramıdır.
+     Miras alma, bir sınıfın (class) diğer bir sınıftan özelliklerini ve davranışlarını devralması anlamına gelir.
+     Java'da, miras alma, bir sınıfın başka bir sınıftan türetilmesiyle gerçekleşir.
+
+        Inheritance'in Faydalari nelerdir?
+
+        1) Kodun yeniden kullanılmasına yardımcı olur.
+        2) Ana kodun tekrar yazılmasına gerek olmadığı için, daha az kod yazarak, zamandan ve
+        emekten tasarruf sağlayabiliriz.
+        3) Kolayca update yapabiliriz.
+        4) Class'lari kuculturuz.
+        5) Daha az geliştirme ve bakım maliyetine yol açar.
+
+
+        Soru: Peki child bir class'ta Object olusturuldugunda, Parent bunu nasil algiliyor da
+        kendi constructor'unu calistiriyor?
+
+        Cevap: Super() cagrisi ile yapilir. Super çağrısı, bir child class'ın constructor'unda,
+        parent class'in parametresiz constructor'unu çağırmak için kullanılan bir ifadedir.
+
+        super() çağrısı, bir child class'ta bir object oluşturulduğunda, otomatik olarak çağrılır.
+        Ancak, super() çağrısını manuel olarak da çağırabilirsiniz.
+        Bunu yapmak için, super() ifadesini, child class'ın constructor'unun başında kullanabilirsiniz.
+        Manuel olarak yazarsaniz parametreli constructor'lari da cagirabilirsiniz.
+
+        Neden super cagrisi yapalim?
+
+        1- super keyword'unu kullanirsaniz, hem parent class'in methodunu çağırabilir hem de bu
+        methodun davranışını child class'in ihtiyacına göre değiştirebilirsiniz.
+
+        2 - extends ise sadece miras almayı sağlar, ancak parent class'in methodlarını değiştirmez.
+
+        Soru : Ayni class'taki constructor'lar arasinda gezinebilir miyim?
+        Ornegin Car class'tan hem sedan hem de sport modellerini ayni anda alip diger ortak ozelliklerle birlikte
+        uretime sokabilir miyim? Evet.
+
+        Cevap : Ayni class'taki constructor'lar arasinda gezinmek icin super() silinir ve this() keyword'u kullanilir.
+         this() default olarak parametresiz constructor'i secer.
+
+        this() ve super() her zaman ilk satirda olmalidir.
+        Bu yuzden bir constructor'da ikisi bir arada kullanilamazlar.
+
+        Soru : super() keyword'u kullanilarak parent class'taki constructor'lar degil de,
+         variable'lar ve methodlar secilebilir mi?  Evet.
+        Cevap : child'da bir constructor icinde, super yazip parantez koymadan, nokta koyup
+         parent'taki variable veya methodlara ulasabiliriz
+
+         OOP'nin prensiplerinin 2.sidir. Polymorphism (cok bicimlilik) demektir.
+         //Bir method'u, istedigimiz sonuclari alacak sekilde, farkli farkli
+         sekilllerde calistirabilmek icin kullanilir.
+
+
+
+
+
+
+
+
+

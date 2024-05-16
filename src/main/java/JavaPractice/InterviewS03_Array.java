@@ -1,9 +1,7 @@
 package JavaPractice;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+
 
 public class InterviewS03_Array {
     public static void main(String[] args) {
