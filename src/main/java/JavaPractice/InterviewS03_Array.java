@@ -26,6 +26,18 @@ public class InterviewS03_Array {
 
         System.out.println("Input: " + str);
         System.out.println("Output: " + duplicateChars);
+
+        String str2 = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.indexOf(str.charAt(i))!=str.lastIndexOf(str.charAt(i))){
+                System.out.print(str.charAt(i));
+                if (!str2.contains(String.valueOf(str.charAt(i)))){
+                    str2+=str.charAt(i) +" ";
+                }
+            }
+        }
+        System.out.println(str2);
 /*
         ArrayList<Character> arr = new ArrayList<>();
         ArrayList<Character> arr2 = new ArrayList<>();

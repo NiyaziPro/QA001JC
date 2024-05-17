@@ -8,4 +8,9 @@ public class Cat extends Mammal {
     public void eat(){
         System.out.println("Cats eat...");
     }
+
+    @Override
+    public void feedWithMilk() {
+        System.out.println("Cats feed their babies with milk");
+    }
 }
