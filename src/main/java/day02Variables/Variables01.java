@@ -22,10 +22,10 @@ public class Variables01 {
         System.out.println(age);
 
         /*
-        Not 1 : primitive data type'larini java tarafinda  olusturulmustur, biz olusturmaliyiz
-        Not 2 : primitive data type'larinin isimlerinin tüm harfleri kücük harften olusur
-        Not 3 : primitive data type'lar her biri memory(Hafıza)'da farklı yer kaplar
-        Not 4 : primitive data type'lar sadece icine atanan degeri korur başka bir iş yapmaz
+            Not 1 : primitive data type'larini java tarafinda  olusturulmustur, biz olusturmaliyiz
+            Not 2 : primitive data type'larinin isimlerinin tüm harfleri kücük harften olusur
+            Not 3 : primitive data type'lar her biri memory(Hafıza)'da farklı yer kaplar
+            Not 4 : primitive data type'lar sadece icine atanan degeri korur başka bir iş yapmaz
 
         Tam Sayilar:
         byte

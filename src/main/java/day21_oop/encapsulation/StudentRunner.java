@@ -21,7 +21,7 @@ public class StudentRunner {
          Cevap 2: setter metodları mevcut bir nesnenin verilerini değiştirmek için kullanılırken, constructorlar yeni nesnelerin
          başlangıç durumunu belirlemek için kullanılır. İkisi de encapsulation'ın bir parçasıdır ve sınıfın verilerinin güvenli
          bir şekilde yönetilmesine yardımcı olur.*/
-    }
 
+    }
 
 }
