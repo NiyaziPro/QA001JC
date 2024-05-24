@@ -9,10 +9,11 @@ public class ForLoops04 {
         String s = "Tramvay";
 
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i)=='a'){
+            char ch = s.charAt(i);
+            if (ch == 'a') {
                 break;
             }
-            System.out.print(s.charAt(i));
+            System.out.print(ch);
         }
     }
 }

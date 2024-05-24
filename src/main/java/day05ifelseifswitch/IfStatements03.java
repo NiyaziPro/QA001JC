@@ -2,7 +2,7 @@ package day05ifelseifswitch;
 
 import java.util.Scanner;
 
-public class IfStatement03 {
+public class IfStatements03 {
     public static void main(String[] args) {
         //Ornek 1:Kullanicidan alinan bir sayinin pozitif, negatif veya notr oldugunu kontrol eden kodu yaziniz
 

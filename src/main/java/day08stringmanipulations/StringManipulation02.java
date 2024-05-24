@@ -14,7 +14,7 @@ public class StringManipulation02 {
         //  tum karakterleri dynamic olarak aliniz. abc@gmail.com ===> gmail
          String mail = "abc@gmail.com";
 
-         // 1.yol : hard codimg (tavsiye edilmez)
+         // 1.yol : hard coding (tavsiye edilmez)
         System.out.println(mail.substring(4, 9));
 
         // 2.yol dynamic

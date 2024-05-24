@@ -2,7 +2,7 @@ package day05ifelseifswitch;
 
 import java.util.Scanner;
 
-public class IfStatement05 {
+public class IfStatements05 {
     public static void main(String[] args) {
         // Ornek 1: Kullanicidan yas degerini alan ve yasin hangi evrede oldugunu asagidaki tabloya gore yazdiran kodu olusturunuz
         //	0-4 (dahil) ==> bebek

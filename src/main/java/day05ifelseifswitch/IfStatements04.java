@@ -2,7 +2,7 @@ package day05ifelseifswitch;
 
 import java.util.Scanner;
 
-public class IfStatement04 {
+public class IfStatements04 {
     public static void main(String[] args) {
 
         // Ornek 1: Kullanicidan gun sayisini aldiginizda gun ismini yazan kodu yaziniz

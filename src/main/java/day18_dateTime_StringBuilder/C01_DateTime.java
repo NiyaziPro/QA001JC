@@ -1,7 +1,9 @@
 package day18_dateTime_StringBuilder;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.Set;
 
 public class C01_DateTime {
     public static void main(String[] args) {
@@ -21,6 +23,14 @@ public class C01_DateTime {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd.MM.yyyy \nhh:mm a");
         System.out.println(dtf.format(ldt));
         System.out.println(dtf.format(ldt.plusMonths(3).plusHours(100)));
+
+
+        Set<String>zoneIds = ZoneId.getAvailableZoneIds();
+
+        for (String zoneId : zoneIds){
+            System.out.println(zoneId);
+        }
+        System.out.println("Toplam zaman dilimi sayisi : "+zoneIds.size()); //Toplam zaman dilimi sayisi : 603
 
     }
 }

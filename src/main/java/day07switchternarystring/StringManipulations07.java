@@ -25,7 +25,7 @@ public class StringManipulations07 {
 
         String name = "   ali cAN kaya  ";
         // trim() : methodu bastaki ve sondaki bosluklari siler
-        // spil() : methodu Stringi istenen karakterden parcalamayi saglar
+        // split() : methodu Stringi istenen karakterden parcalamayi saglar
 
         char firstChar = name.trim().toUpperCase().charAt(0);
         System.out.println("firstChar = " + firstChar);
