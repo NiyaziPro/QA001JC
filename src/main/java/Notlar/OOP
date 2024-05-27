@@ -65,7 +65,7 @@ OOP'leri 4 temel özellikte inceleyebiliriz.
          parent'taki variable veya methodlara ulasabiliriz
 
          OOP'nin prensiplerinin 2.sidir. Polymorphism (cok bicimlilik) demektir.
-         //Bir method'u, istedigimiz sonuclari alacak sekilde, farkli farkli
+         Bir method'u, istedigimiz sonuclari alacak sekilde, farkli farkli
          sekilllerde calistirabilmek icin kullanilir.
 
 

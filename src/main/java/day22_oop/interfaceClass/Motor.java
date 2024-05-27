@@ -11,11 +11,11 @@ public interface Motor {
      * kendi ihtiyaçlarına göre tanımlarlar.
      */
 
-        // i) interface icindeki method'lar otomatik olarak 'public' dir,
-        // bu yuzden interface'lerde method olustururken access modifier yazmayiz.(static degillerdir)
+    // i) interface icindeki method'lar otomatik olarak 'public' dir,
+    // bu yuzden interface'lerde method olustururken access modifier yazmayiz.(static degillerdir)
 
-        // ii) interface icindeki method'lar otomatik olarak 'abstract' dir, bu yuzden interface'lerde
-        // abstract method olustururken 'abstract' keyword'unu ve 'method body' sini yazmayiz.
+    // ii) interface icindeki method'lar otomatik olarak 'abstract' dir, bu yuzden interface'lerde
+    // abstract method olustururken 'abstract' keyword'unu ve 'method body' sini yazmayiz.
 
     /*
         1) interface'lerden object olusturamazsiniz.(constructor'lari olmadigi icin eksik yapilardir)
@@ -53,5 +53,13 @@ object olusturarak ulasilabilir*/
 
     void gas();
 
-    void run ();
+    void run();
+
+    default void guc() {
+        System.out.println("200HP");
+    }
+
+    static void hiz() {
+        System.out.println("Saatte 200km");
+    }
 }

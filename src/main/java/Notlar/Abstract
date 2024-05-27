@@ -23,3 +23,20 @@ Abstraction(Soyut)
   yani miras alınamaz. Bu, final sınıfların alt sınıfları olamayacağı anlamına gelir.
   Bu nedenle, final class'lar abstract olamaz çünkü abstract sınıflar genişletilmek ve
   abstract metodları implement etmek üzere tasarlanmışlardır.
+
+
+  8) Abstract Class ile Interface arasindaki farklar nelerdir?
+
+  a) Abstract class'lar hem abstract method hemde concrete methodlar icerebilir.
+  fakat interface'ler varsayilan olarak abstract method icerir.
+    Ama interfacelerde istersek default ve static keywordllerini kullanarak concrete method olusturabiliriz
+
+  b) Abstract class'lar multiple inheritance'i desteklemez ama interface'ler destekler
+
+  c) Abstract class'lar icinde her turlu variable olusturulabilir, interfaceler icindeki variable'lar
+  public, static ve final olmak zorundadir
+
+  d) Interface, concrete class'ın child'ı olamaz. Abstract class, concrete class'ın child'ı olabilir.
+
+  e) Abstract class'larda constructor vardir (concrete bir method bu constructor'u istegine gore
+  override edebilir) ama object uretemez, interface'lerde constructur yoktur,bu yuzden object uretilemez

@@ -1,0 +1,23 @@
+Collections (koleksiyonlar), Object'leri depolamak ve işlemek için kullanılan
+bir class'lar ve interface'ler kümesidir.
+
+—Collections, çeşitli Object (nesne) işleme yöntemlerini de destekler:
+        Ekleme: Bir nesneyi bir koleksiyona eklemek için kullanılır.
+       Silme: Bir nesneyi bir koleksiyondan silmek için kullanılır.
+       Arama: Bir koleksiyonda bir nesneyi bulmak için kullanılır.
+        Döngüleme: Bir koleksiyonun tüm nesnelerini işlemek için kullanılır.
+
+—Collections, Java programcılarının aşağıdakileri yapmasına olanak tanır:
+        Verileri verimli bir şekilde depolamak
+        Verileri hızlı bir şekilde işlemek(verileri aramak, sıralamak, filtrelemek)
+        Verileri güvenli bir şekilde depolamak
+
+Java da Array'ler neden eksik kaldi da Collection'lar gelistirildi?
+
+Java'da array'ler eksik kaldı çünkü:
+
+Boyutları statiktir: Bu, array'lerin dinamik olarak büyüyemediği veya küçülemediği anlamına gelir.
+İç içe geçmiş array'ler karmaşıktır: Bu, array'lerin birbirleriyle ilişkili olduğu durumlarda karmaşık ve hata yapmaya müsaittir.
+Array'ler genel olarak verimli değildir: Bu, ekleme, silme ve arama gibi işlemler için genellikle daha yavaştır.
+
+Collections, bu dezavantajları çözmek için tasarlanmıştır.
