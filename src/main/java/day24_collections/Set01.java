@@ -54,7 +54,19 @@ public class Set01 {
             HashSet<String >hashSet2 = new HashSet<>(Set.of("Kerem", "Sinan", "Tuba", "Onur"));
             System.out.println(hashSet2);  // [Kerem, Sinan, Tuba, Onur]
 
-            // LinkedList olusturun , ve bir OOp nesne olusturun ve bu insanlari baglayin. ( ornek : LinkedList<Human> halay = new LinkedList();
+            // LinkedList olusturun , ve bir OOp nesne olusturun ve bu insanlari baglayin.
+            // ( ornek : LinkedList<Human> halay = new LinkedList();
+
+
+
+
+
+
+
+
+
+
+
 
         }
 

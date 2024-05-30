@@ -10,4 +10,11 @@ public class Telefon extends Teknoloji{
     public void kameraSayisi(){
         System.out.println("Telefonda kamera sayisi : 2");
     }
+
+    @Override
+    public String toString() {
+        return "Telefon{" +
+                "cip='" + cip + '\'' +
+                '}';
+    }
 }

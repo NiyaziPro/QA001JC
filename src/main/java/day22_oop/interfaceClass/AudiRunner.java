@@ -1,5 +1,7 @@
 package day22_oop.interfaceClass;
 
+
+
 public class AudiRunner {
     public static void main(String[] args) {
         AudiA4 a4 = new AudiA4();
@@ -13,6 +15,8 @@ public class AudiRunner {
         s5.abs(); // Audi S5 ABS fren sistemi kullanır
         ((Motor) s5).run(); // Audi S5 lazer far calistirdi
         System.out.println(AudiS5.fiyat);
+
+
 
 
     }
