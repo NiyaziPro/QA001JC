@@ -1,7 +1,6 @@
-package day25.konu;
+package day25_collections.konu;
 
 import java.util.LinkedList;
-import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Queue01 {

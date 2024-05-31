@@ -1,4 +1,4 @@
-package day25.odev;
+package day25_collections.odev;
 
 public class Kedi {
     String name;

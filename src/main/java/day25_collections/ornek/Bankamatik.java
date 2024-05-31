@@ -1,4 +1,4 @@
-package day25.ornek;
+package day25_collections.ornek;
 
 public class Bankamatik {
     String cardName;

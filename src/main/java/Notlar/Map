@@ -1,0 +1,4 @@
+//1) Map'ler sozluk gibidir. Aciklamalidir.  orn: Ali = 13 .Map'ler collections degildir. Ordan miras almaz
+//2) Sol taraf yani key'ler tekrarsizdir. Value tarafi tekrarli olabilir.
+//3) Key tarafi icin Set kullanilir. Values için ise genellikle Collection yapısı kullanılır.
+//4) Map'in elemanlarina komple 'entry set' (giris elemani) denir.

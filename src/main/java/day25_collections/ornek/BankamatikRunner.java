@@ -1,4 +1,4 @@
-package day25.ornek;
+package day25_collections.ornek;
 
 import java.util.LinkedList;
 import java.util.Queue;

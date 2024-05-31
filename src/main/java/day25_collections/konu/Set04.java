@@ -1,4 +1,4 @@
-package day25.konu;
+package day25_collections.konu;
 
 import java.util.HashSet;
 import java.util.TreeSet;

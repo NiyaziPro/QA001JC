@@ -1,4 +1,4 @@
-package day25.ornek;
+package day25_collections.ornek;
 
 import java.util.Deque;
 import java.util.LinkedList;

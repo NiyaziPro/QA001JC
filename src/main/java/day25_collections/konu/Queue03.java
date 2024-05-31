@@ -1,6 +1,5 @@
-package day25.konu;
+package day25_collections.konu;
 
-import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 
