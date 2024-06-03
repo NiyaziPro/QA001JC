@@ -2,7 +2,7 @@ package day22_oop.abstractClass.konuIcinOrnek;
 
 public abstract class Honda {
 
-    /**
+    /*
      * 4- Abstraction(Soyut)
      * Abstraction iki bolumden olusur.
      * i) Abstract Class:
