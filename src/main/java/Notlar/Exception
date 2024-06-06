@@ -27,3 +27,7 @@ https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html
 
 1) ArithmeticException : Matematik kurallarinda herhangi bir hata yaparsaniz bu exception'i alirsiniz
 
+- try-catch kullandiginizda sistem tarafindan "try" bolumu calistirilir,
+- eger "try" bolumunde hata ile karsilasilmazsa "catch" blogu hic calismaz
+- Eger "try" bolumunde hata ile karsilasilirsa hata alinan satirda calisma durdurulur
+- ve "catch - yakalamak" bolumu calismaya baslar.

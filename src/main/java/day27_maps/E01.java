@@ -53,5 +53,11 @@ public class E01 {
         } catch (ArithmeticException e) {
             System.out.println("Sifir ile bolunmez!");
         }
+        System.out.println("Catch parantezi disinda olan kodlar...");
     }
+
+    //try-catch kullandiginizda sistem tarafindan "try" bolumu calistirilir,
+    // eger "try" bolumunde hata ile karsilasilmazsa "catch" blogu hic calismaz
+    //Eger "try" bolumunde hata ile karsilasilirsa hata alinan satirda calisma durdurulur
+    // ve "catch - yakalamak" bolumu calismaya baslar.
 }
