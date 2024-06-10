@@ -1,4 +1,4 @@
-package proje;
+package proje.biletRezervasyonApp;
 
 public class BiletRezervasyonApp {
 
@@ -28,4 +28,15 @@ public class BiletRezervasyonApp {
                 Kişi 65 yaşından büyük ise son bilet fiyatı üzerinden %30 indirim uygulanır.
 
                 */
+
+    public static void main(String[] args) {
+        // 1. bilet rezervasyonu yapabilmek icin bir otobuse ihtiyacimiz var
+
+        Bus bus = new Bus("80 AB 80","Techpro","2.Peron");
+
+        //3-bilet objesi olusturup biletle ilgili ozellikleri koyucaz
+        Ticket ticket = new Ticket();
+        ticket.printTicket(bus);
+        // 7. uygulamayi baslatan bir method
+    }
 }
