@@ -39,3 +39,55 @@ geçersiz bir indekse erişmeye çalışıldığında ortaya çıkan bir istisna
 dizi boyutunu aşan bir indeks kullanıldığında meydana gelir.
 5) NullPointerException:(bos isaretcisi) Null degerindeki bir variable referans olarak kullanildiginda olusur
 6) IllegalArgumentException, bir metodun geçersiz bir argüman aldığında oluşan bir hata türüdür.
+
+
+
+
+
+1) Çalıştırma düğmesine bastıktan sonra karşılaşılan hatalar Çalışma Zamanı Hataları olarak adlandırılır...
+       örneğin ArithmeticException,
+       NullPointerException,
+       StringIndexOutOfBoundsException
+
+       Çalışma Zamanı Hataları aynı zamanda "Unchecked Exception" (çalıştırma düğmesine basmadan önce kontrol edilmez) olarak da adlandırılır.
+
+
+    2) Kod yazarken kırmızı alt çizgilerle belirtilen hatalar da vardır.
+       Bunlar "Derleme Zamanı Hataları" yani"Compile time exceptions" olarak adlandırılır
+       ve derleme zamanı hataları "Checked Exception" olarak da bilinir...
+       (çalıştırma düğmesine basmadan önce kontrol edilir)
+
+Açıklama; FileInputStream kullandık. Bu bir sınıftır. FileInputStream sınıfı Java'da dosyaları byte formatında okumak için kullanılır.
+java.io paketinin bir parçasıdır.
+Genellikle metin dosyaları, resimler, ses dosyaları gibi dosya türlerini okumak için kullanılır..
+
+Not: ASCII tablosunda "A" veya herhangi bir karakter 1 byte'a eşittir.....
+
+
+FileInputStream fis = new FileInputStream("src/main/java/d32Exceptions/file.txt");
+Root'ta dosya yoksa ne olur, bir istisna alırsınız (FileNotFoundException)
+
+//Dosyada okunacak metin bittiğinde ASCII değeri -1 dönecektir
+while ((k = fis.read()) != -1) {
+
+    System.out.print((char) k); // ASCII değerini karaktere dönüştürmek için type casting kullandım
+
+    //read() metodu dosyadan bir byte okur (0'dan 255'e kadar olan tamsayı-ASCII değerini döner)
+    //Eğer dosya 'A' karakterini içeriyorsa, read() metodu 65 değerini döndürecektir.
+    //Eğer dosya 'a' karakterini içeriyorsa, read() metodu 97 değerini döndürecektir.
+    //-1 dosyanın sonu (EOF) olarak kabul edilir.
+    //read() dosyanın sonuna ulaştığında -1 döner.
+}
+}
+
+throw ve throws arasındaki farklar nelerdir?
+1) "throw" metot gövdesi içinde kullanılır,
+   ama "throws" metot parantezlerinden sonra kullanılır (metot imzası gibi)
+2) throw, metot gövdesi içinde istenilen yerde ve istenildiği kadar yazılıp kullanılabilir.
+   throws, metot imzasından hemen sonra ve sadece bir kez yazılır.
+3) throw'dan sonra "new" anahtar kelimesi ve bir yapıcı (constructor) kullanılarak bir nesne oluşturulur.
+
+   throws'dan sonra ise sadece istisna sınıfının adı yazılır.
+4) throw, belirli koşullar altında bir istisna fırlatmak için kullanılır (örneğin, yaş negatif olamaz şartını belirleriz).
+
+   throws ise bir metodun belirli bir istisna fırlatabileceğini belirtmek için kullanılır.

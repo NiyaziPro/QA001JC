@@ -1,4 +1,4 @@
-package proje;
+package proje.loginPageApp;
 
 public class LoginPageApp {
 
@@ -28,4 +28,7 @@ public class LoginPageApp {
           : en az bir tane rakam içermeli
           : en az bir tane sembol içermeli
           */
+          public static void main(String[] args) {
+              Menu.start();
+          }
 }

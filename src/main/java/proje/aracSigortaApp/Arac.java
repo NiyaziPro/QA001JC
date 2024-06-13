@@ -41,6 +41,7 @@ public class Arac {
     }
 
     public void primHesaplaOtobus(int donem) {
+
         Scanner input = new Scanner(System.in);
         System.out.println("Otobus tipini seciniz : \n1. 18-30 arasi koltuk sayisi \n2. 31 ve ustu koltuk sayisi");
         int otobusTipi = 0;

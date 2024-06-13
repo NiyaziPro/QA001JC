@@ -43,7 +43,7 @@ public class AracSigortaApplication {
                 donem = input.nextInt();
             } else {
                 System.err.println("Sadece kacinci donem oldugunu giriniz!!!");
-                input.nextLine();//dumppy
+                input.nextLine();//dummy
                 isAgain = true;
                 continue;
             }
