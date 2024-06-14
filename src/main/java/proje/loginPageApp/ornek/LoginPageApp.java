@@ -1,5 +1,7 @@
 package proje.loginPageApp.ornek;
 
+import java.util.Scanner;
+
 public class LoginPageApp {
     public static void main(String[] args) {
          /*
@@ -31,5 +33,42 @@ public class LoginPageApp {
 
         // 1. Kullanici class'i olusturup tum ozelliklerini o class'a tasiyalim
         // 2. kullanici ile ilgili
+
+//        UserService userService = new UserService();
+//        userService.register();
+
+        start();
+
+    }
+
+    public static void start() {
+        Scanner input = new Scanner(System.in);
+
+        // userservicten bir obje olusturalim
+        UserService userService = new UserService();
+        int select;
+
+        do {
+            System.out.println("********** Techpro Education **********");
+            System.out.println("1. Uye ol");
+            System.out.println("2. Giris yap");
+            System.out.println("0. Cikis");
+            select = input.nextInt();
+            switch (select) {
+                case 1:
+                    userService.register();
+                    break;
+                case 2:
+                    userService.login();
+                    break;
+                case 0:
+                    System.out.println("Iyi gunler dileriz...");
+                    break;
+                default:
+                    System.out.println("Hatali giris");
+                    break;
+            }
+
+        } while (select != 0);
     }
 }

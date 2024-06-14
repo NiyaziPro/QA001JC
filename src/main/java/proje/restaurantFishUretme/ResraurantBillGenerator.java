@@ -1,6 +1,6 @@
 package proje.restaurantFishUretme;
 
-public class Dish {
+public class ResraurantBillGenerator {
      /*
 Proje: Restaurant Fiş Üretme Uygulaması(BillGenerator)
        1-Bir restaurantın online sipariş sisteminde hesabı
@@ -21,4 +21,6 @@ Proje: Restaurant Fiş Üretme Uygulaması(BillGenerator)
          Hesap oluşturma: Tutarları ile birlikte tüm siparişleri ve
                           toplam tutarı gösteren bir hesap fişi yazdırılsın.
 */
+
+
 }

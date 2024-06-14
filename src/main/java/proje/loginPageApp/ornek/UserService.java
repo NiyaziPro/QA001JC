@@ -79,6 +79,41 @@ public class UserService {
 
     }
 
+    public boolean validateEmail(String email) { //Ahmet hoca
+        boolean isValid=false;
+        boolean space = email.contains(" ");
+        boolean containsAt = email.contains("@");
+
+        if (space){
+            System.out.println("Email bosluk iceremez");
+            isValid= false;
+        }
+        if (!containsAt){
+            System.out.println("Email @ icermeli");
+            isValid = false;
+        }
+        if (!space && containsAt){
+            String firstPart = email.split("@")[0];
+            String secondPart = email.split("@")[1];
+            boolean notValidChar = firstPart.replaceAll("[a-zA-Z0-9-._]","").isEmpty();
+            boolean checkSecond = secondPart.equals("gmail.com")||secondPart.equals("yahoo.com")||secondPart.equals("hotmail.com");
+            if (!notValidChar){
+                System.out.println("Email harf,rakam ve -_. sembolleri disinda karakter iceremez");
+            }
+            if(!checkSecond){
+                System.out.println("Email gmail.com , hotmail.com veya yahoo.com ile bitmelidir");
+            }
+            isValid = notValidChar&&checkSecond;
+            if (!isValid){
+                System.out.println("Gecersiz Email!!!");
+            }
+        }
+
+
+        return isValid;
+
+
+    }
 
     public boolean validateEmail1(String email) {
         // ODEV !!!
@@ -187,7 +222,7 @@ public class UserService {
 
     }
 
-    public boolean validateEmail(String email) {
+    public boolean validateEmail2(String email) {
         // ODEV !!!
         //email validation:
         // boşluk içermemeli
@@ -198,7 +233,7 @@ public class UserService {
         boolean space = email.contains(" ");
         boolean cont = email.contains("@");
         boolean endWith = email.endsWith("gmail.com") || email.endsWith("yahoo.com") || email.endsWith("hotmail.com");
-        boolean username = email.split("@")[0].replaceAll("[A-Za-z0-9-_.]", "").isBlank();
+        boolean username = email.split("@")[0].replaceAll("[A-Za-z0-9-_.]", "").isEmpty();
 
         if (space) {
             System.out.println("Email bosluk karakteri iceremez");
@@ -219,4 +254,6 @@ public class UserService {
         }
         return isValid;
     }
+
+
 }
