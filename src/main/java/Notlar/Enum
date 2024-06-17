@@ -1,0 +1,35 @@
+Java'da enum (enumeration - sıralama), bir dizi sabit değeri temsil etmek için kullanılan özel bir class türüdür.
+          enum yapısı, belirli bir değer kümesini temsil eden sabitleri (constants) tanımlamak için kullanılır.
+          Degisme ihtimali olmayan verileri tutarlar.(ay, gun isimleri gibi) ve buyuk harfle yazilirlar.
+
+          enum'un temel avantajları şunlardır:
+
+        Tip Güvenliği: enum ile tanımlanan bir değişken, sadece belirtilen enum değerlerinden birine sahip olabilir.
+        Bu, geçersiz değerlerin atanmasını engeller.
+        Kod Okunabilirliği: enum kullanımı, kodun okunabilirliğini artırır, çünkü anlamlı isimlere sahip
+        sabitleri kullanabilirsiniz.
+        Kod tekrarını azaltır: Enumlar, aynı sabit değerleri birden çok kez tanımlamayı önler.
+        Bu, kod tekrarını azaltır. Ve dis kaynaklara bagimliligi kaldirir.
+        Ornegin illeri app'inizde saklarsiniz, gerektiginde cagirir kullanirsiniz.
+        Bir siteden cekmezsiniz. Cunku site cokmus olabilir
+
+//Öncü Sıfırlar: Posta kodları bazen öncü sıfırlarla başlar. Örneğin, "01000" gibi.
+// Eğer bu değerleri int olarak saklarsanız, öncü sıfırlar kaybolur ve sadece "1000" olarak saklanır.
+// String olarak saklamak bu öncü sıfırların korunmasını sağlar.
+
+Expected 0 arguments but found 3 hatası,Sehirler enum yapısında. Her bir enum değeri için 3 argüman sağladık
+         (int, String, String). Bu argümanları kabul eden bir yapıcı (constructor) tanımlamanız gerekiyor.
+        ama once 3 tane variable olusturalim
+        private, bir değişkenin yalnızca class'in içinden erişilebilir olmasını sağlar.
+        Bu, değişkenin dışarıdan erişilmesini ve değiştirilmesini önler.(encapsulation)
+        final, bir değişkenin değerinin değiştirilemeyeceğini belirtir.
+        Bu, plaka kodunun yalnızca bir kez ayarlanmasını sağlar.
+        Açıklama: Enum'lar, önceden tanımlanmış sabit değerleri temsil eden yapılardir.
+        Bu nedenle, plaka kodu, yalnızca enum'un içinden ayarlanmalı ve değiştirilmelidir.
+        Dışarıdan erişilmesi veya değiştirilmesi, enum'un tutarlılığını bozabilir.*/
+
+
+
+
+
+
