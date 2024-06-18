@@ -114,6 +114,17 @@ public enum Cities {
         Açıklama: Enum'lar, önceden tanımlanmış sabit değerleri temsil eden yapılardir.
         Bu nedenle, plaka kodu, yalnızca enum'un içinden ayarlanmalı ve değiştirilmelidir.
         Dışarıdan erişilmesi veya değiştirilmesi, enum'un tutarlılığını bozabilir.*/
+    /*
+        1) enum'daki datalar sabittir
+        2) enum'dan new keywordu ile yeni bir object olusturamazsiniz
+        3) Cunku enum icine koymus oldugunuz her bir sabit data bu classtan olusturulmus bir object mantigi ile calisir
+        4) enum icerisine koymus oldugumuz her bir sabit default olarak public static ve final'dir.
+        (Burada iller kastediliyor-enum tanımlarken bu anahtar kelimeleri sabitlerin önüne yazmak gerekmez
+        ve yazılamaz da; dilin sözdizimi bunu desteklemez)
+        5) Bu nedenle enum icindeki her bir sabit dataya enum ismi yazarak ulasabilirsiniz
+        6) enum'daki constructor yeni bir object olusturmak icin degil, enum'in icindeki her bir sabit
+        datanin icindeki variable'lari baslatmak icin kullanilir
+        */
 
     private final int plateCode;
     private final String cityName;
@@ -123,5 +134,18 @@ public enum Cities {
         this.plateCode = plateCode;
         this.cityName = cityName;
         this.postalCode = postalCode;
+
+    }
+
+    public int getPlateCode() {
+        return plateCode;
+    }
+
+    public String getCityName() {
+        return cityName;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
     }
 }
