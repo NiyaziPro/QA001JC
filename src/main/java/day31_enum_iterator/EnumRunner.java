@@ -2,6 +2,7 @@ package day31_enum_iterator;
 
 import day30_exceptions.Cities;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class EnumRunner {
@@ -38,6 +39,7 @@ public class EnumRunner {
         //values() methodu enum icindeki tum datalari bir array icinde bize verir
         //81 tane switch-case yapmaktan kurtulduk
         Cities[] sehirler = Cities.values();
+        //System.out.println(Arrays.toString(sehirler));
 
         if (plaka < 1 || plaka > 81) {
             System.out.println("Lutfen 1-81 arasi bir plaka kodu giriniz!");

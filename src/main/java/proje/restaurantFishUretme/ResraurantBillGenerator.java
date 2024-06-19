@@ -1,5 +1,9 @@
 package proje.restaurantFishUretme;
 
+import java.util.Arrays;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class ResraurantBillGenerator {
      /*
         Proje: Restaurant Fiş Üretme Uygulaması(BillGenerator)
@@ -23,4 +27,114 @@ public class ResraurantBillGenerator {
 */
 
 
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        boolean isAgain = false;
+
+        do {
+            System.out.println(">>>>>>> BIZIM RESTORAN <<<<<<<" +
+                    "\n<< Uygulamasina Hosgeldiniz >> " +
+                    "\n\n1.Yiyecek menüsü\n2.Sipariş oluştur\n3.Cikiş yap");
+            int select;
+            if (input.hasNextInt()) {
+                select = input.nextInt();
+                input.nextLine();
+            } else {
+                System.err.println("Yanlis  girdiniz! Lutfen tekrar deneyin!");
+                input.next();
+                isAgain = true;
+                continue;
+            }
+            switch (select) {
+                case 1:
+                    showFoodList();
+                    System.out.println("\nSipariş etmek icin 1 , Ana menuye donmek icin 2 girin : ");
+
+                    try {
+                        int slct = input.nextInt();
+                        if (slct == 1) {
+                            order();
+                        } else if (slct == 2) {
+                            isAgain = true;
+                        } else {
+                            System.err.println("Hatali giris! Lutfen tekrar deneyin...");
+                            isAgain = true;
+                        }
+                    } catch (InputMismatchException e) {
+
+                        System.err.println("Lutfen bir tam sayi giriniz!!!");
+                        isAgain = true;
+                        input.nextLine();
+                    }
+                case 2:
+                    showFoodList();
+                    System.out.println();
+                    order();
+                case 3:
+                    System.out.println("Bizi tercih ettiginiz icin Tesekkur ederiz " +
+                            "\n<<<<>>>>       Afiyet olsun        <<<<>>>>");
+                    break;
+
+            }
+
+
+        } while (isAgain);
+
+
+    }
+
+    private static void order() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lutfen sectiginiz yemegin numarasini girin : \nToplam tutari gormek icin 0 girin");
+        boolean isAgain = true;
+        double toplam = 0;
+        String foodName = "";
+        FoodLists[] list = FoodLists.values();
+        while (isAgain) {
+            int select = scanner.nextInt();
+            for (FoodLists w : list) {
+                if (select == w.getFoodCode()) {
+                    if (select < 0 || select > 11) {
+                        System.err.println("Lutfen Menu disi yemek kodu girmeyiniz!");
+                        isAgain = false;
+                    } else {
+                        toplam = toplam + w.getFoodPrice();
+                        foodName = w.getFoodName();
+                        System.out.println(w.getFoodName() + " - " + w.getFoodPrice() + " Euro");
+                    }
+                } else if (select == 0) {
+                    System.out.format("Siparisinizin toplam tutari : %.2f Euro", toplam);
+                    System.out.println("\n1. Siparis Et\n2. Iptal et");
+                    select = scanner.nextInt();
+                    if (select == 1) {
+                        System.out.println("Siparisiniz tamamlanmistir.\nBizi tercih ettiginiz icin Tesekkur ederiz\nAfiyet olsun :)");
+                        isAgain = false;
+                    } else if (select == 2) {
+                        System.out.println("Siparisiniz iptal edilmistir...");
+                        isAgain = false;
+                        break;
+
+                    }else {
+                        System.out.println("Hatali giris! Lutfen tekrar deneyin");
+                        isAgain = true;
+                        continue;
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+
+    private static void showFoodList() {
+
+        FoodLists[] menu = FoodLists.values();
+        System.out.println("Yiyecek menüsü");
+        for (FoodLists w : menu) {
+            System.out.println(w.getFoodCode()+". "+w.getFoodName() + " - " + w.getFoodPrice() + " Euro");
+        }
+    }
 }

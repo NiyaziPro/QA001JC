@@ -42,8 +42,6 @@ dizi boyutunu aşan bir indeks kullanıldığında meydana gelir.
 
 
 
-
-
 1) Çalıştırma düğmesine bastıktan sonra karşılaşılan hatalar Çalışma Zamanı Hataları olarak adlandırılır...
        örneğin ArithmeticException,
        NullPointerException,
@@ -96,10 +94,6 @@ throw ve throws arasındaki farklar nelerdir?
   2) Code yazarken kirmizi alt cizgi seklinde alinan Exceptionlar'da vardir. Bunlara da Compile Time Exception
 denir,  Compile Time Exception'lara Checked Exception'da denir.(run butonuna basmadan once kontrol var).
 
-Aciklama: FileInputStream kullanacagiz. Bir class'tir.FileInputStream sınıfı, Java'da dosyaları bayt (byte) bazlı
-        okumak için kullanılır. Bu sınıf, Java'nın java.io paketinin bir parçasıdır.
-        Genellikle metin dosyaları, resimler, ses dosyaları vb. dosya türlerini okumak için kullanılır.
-        Not: ASCII tablosundaki "A" ya da herhangi bir başka karakter 1 byte'a eşittir.
 
 interview sorusu
         throw ile throws arasindaki farklar nelerdir?
