@@ -24,7 +24,7 @@ public class ResraurantBillGenerator {
          Sipariş iptal:Sipariş kodu girilerek sipariş silinsin
          Hesap oluşturma: Tutarları ile birlikte tüm siparişleri ve
                           toplam tutarı gösteren bir hesap fişi yazdırılsın.
-*/
+          */
 
 
     public static void main(String[] args) {
@@ -78,7 +78,6 @@ public class ResraurantBillGenerator {
 
             }
 
-
         } while (isAgain);
 
 
@@ -120,13 +119,9 @@ public class ResraurantBillGenerator {
                         isAgain = true;
                         continue;
                     }
-
                 }
             }
-
         }
-
-
     }
 
     private static void showFoodList() {

@@ -1,0 +1,30 @@
+ Lambda ifadeleri, Java 8 ile birlikte tanıtılan ve fonksiyonel(methodsal) programlamayı
+            kolaylaştırmak için kullanılan bir özelliktir.
+            Lambda ifadelerinin genel avantajları:
+            1- Daha az kod yazma: Lambdalar, daha az ve daha okunabilir kod yazmanızı sağlar.
+            2- Fonksiyonel programlama: Java'nın fonksiyonel programlama özelliklerini kullanmanıza yardımcı olur.
+            3- İsimsizdir: Lambda ifadeleri, bir isme sahip değildir.(method ismi yoktur)
+            4- Tek bir ifade içerebilir: Lambda ifadeleri, bir veya daha fazla işlem gerçekleştiren tek
+            bir ifade içerebilir.
+            5- Bir veya daha fazla parametre alabilir*/
+                /*1) Lambda Functional Programming'dir, digeri "Structured Programming" dir
+            Structured Programming: Yapısal programlama, programların belirli yapılar veya kontrol yapıları
+            (örneğin döngüler, şartlı ifadeler) kullanılarak yazılmasını teşvik eden bir programlamadir.
+            2) Functional programming, Collection'lar ve Array'ler ile yaygin olarak kullanilir.(Map'lerde direkt kullanilmaz
+            entrySet ile Set'e cevrilirse kullanilabilir)
+  1) Bir list'teki elemanlari ayni satirda aralarina bosluk koyarak yazdiran method'u olusturunuz.(Structured == Yapisal)
+  2) Bir list'teki elemanlari ayni satirda aralarina bosluk koyarak yazdiran method'u olusturunuz.(Functional)
+  stream() metodu, koleksiyonları bir akışa (stream) dönüştürerek üzerinde işlem yapmayı sağlar.
+    Akışın (stream) adı, verinin bir kaynaktan hedefe doğru "akmasını" ifade eder.
+    Eğer sadece bir forEach işlemi yapılacaksa, stream()'i kullanmak zorunlu değildir,doğrudan koleksiyon üzerinde de forEach kullanılabilir.
+Ancak, birden fazla işlemi birleştirmek veya daha karmaşık işlemler yapmak için Stream API'sini kullanmak daha uygundur.
+3) Bir list'teki cift elemanlari ayni satirda aralarina bosluk koyarak yazdiran method'u olusturunuz.(Structured)
+4) Bir list'teki cift elemanlari ayni satirda aralarina bosluk koyarak yazdiran method'u olusturunuz.(Functional)
+ Stream API'si ile birlikte sıkça kullanılan bazı metodlar şunlardır:
+filter(): Koşulu karşılayan elemanları filtreler.
+ map() : Elemanlari donusturmek icin kullanilir
+ reduce()azaltmak: Koleksiyon elemanlarını tek bir değere indirger
+
+ Java'da method reference, lambda ifadelerine bir alternatif olarak sunulan bir özelliktir.
+ Method reference, zaten tanımlanmış bir metodu doğrudan bir fonksiyonel arayüze atamak için kullanılır.
+ Bu, bazen bir lambda ifadesinden daha okunabilir bir kod yazmamıza olanak tanır.
