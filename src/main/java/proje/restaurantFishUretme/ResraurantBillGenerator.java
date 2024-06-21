@@ -2,6 +2,7 @@ package proje.restaurantFishUretme;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;
+import java.util.Map;
 import java.util.Scanner;
 
 public class ResraurantBillGenerator {
@@ -71,10 +72,14 @@ public class ResraurantBillGenerator {
                     showFoodList();
                     System.out.println();
                     order();
+
+                    break;
                 case 3:
                     System.out.println("Bizi tercih ettiginiz icin Tesekkur ederiz " +
                             "\n<<<<>>>>       Afiyet olsun        <<<<>>>>");
                     break;
+                default:
+                    throw new IllegalArgumentException();
 
             }
 
@@ -108,13 +113,14 @@ public class ResraurantBillGenerator {
                     select = scanner.nextInt();
                     if (select == 1) {
                         System.out.println("Siparisiniz tamamlanmistir.\nBizi tercih ettiginiz icin Tesekkur ederiz\nAfiyet olsun :)");
+
                         isAgain = false;
                     } else if (select == 2) {
                         System.out.println("Siparisiniz iptal edilmistir...");
                         isAgain = false;
                         break;
 
-                    }else {
+                    } else {
                         System.out.println("Hatali giris! Lutfen tekrar deneyin");
                         isAgain = true;
                         continue;
@@ -124,12 +130,15 @@ public class ResraurantBillGenerator {
         }
     }
 
-    private static void showFoodList() {
+    public static void showFoodList() {
 
         FoodLists[] menu = FoodLists.values();
         System.out.println("Yiyecek menüsü");
         for (FoodLists w : menu) {
-            System.out.println(w.getFoodCode()+". "+w.getFoodName() + " - " + w.getFoodPrice() + " Euro");
+            System.out.println(w.getFoodCode() + ". " + w.getFoodName() + " - " + w.getFoodPrice() + " Euro");
         }
     }
+
+
+
 }
