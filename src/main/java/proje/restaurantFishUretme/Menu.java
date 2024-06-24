@@ -2,7 +2,7 @@ package proje.restaurantFishUretme;
 
 import java.util.Scanner;
 
-import static proje.restaurantFishUretme.Methodlar.*;
+import static proje.restaurantFishUretme.OrderService.*;
 import static proje.restaurantFishUretme.ResraurantBillGenerator.showFoodList;
 
 public class Menu {

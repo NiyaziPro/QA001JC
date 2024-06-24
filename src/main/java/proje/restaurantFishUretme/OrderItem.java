@@ -34,6 +34,6 @@ public class OrderItem {
         return "Sipariş Kodu: " + orderCode +
                 ", Yiyecek: " + food.getFoodName() +
                 ", Adet: " + quantity +
-                ", Toplam Tutar: " + totalAmount + " Euro";
+                ", Toplam Tutar: " + String.format("%.2f",totalAmount) + " Euro";
     }
 }
