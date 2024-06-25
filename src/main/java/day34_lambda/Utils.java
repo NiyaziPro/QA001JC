@@ -12,9 +12,13 @@ forEach(t -> System.out.print(t+" ") kullandik. For each icini
 method haline getirelim ve cagiralim
      */
 
-    public static void printInTheSameLineWithSpace(Object obj){
+    public static void printInTheSameLineWithSpace(Object obj) {
         //String veya int yazdir diye sınırlamamak icin object yazdir
         System.out.print(obj + " ");
         //System.out.printf("%-15s  %3s",obj , "123\n");
+    }
+
+    public static boolean isNumberEven(int number) {
+        return number % 2 == 0;
     }
 }
