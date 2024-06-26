@@ -24,7 +24,43 @@ Ancak, birden fazla işlemi birleştirmek veya daha karmaşık işlemler yapmak 
 filter(): Koşulu karşılayan elemanları filtreler.
  map() : Elemanlari donusturmek icin kullanilir
  reduce()azaltmak: Koleksiyon elemanlarını tek bir değere indirger
-
+ sorted(): Koleksiyonu belirli bir kritere göre sıralar.(naturel order. kucukten buyuge)
+ sorted(Comparator.reverseOrder()) ifadesi,
+         // Java Stream API'si içinde bir koleksiyonu ters sıralamak için kullanılır.
+         //Comparator class, reverseOrder() methoddur.
+findFirst(): Sıralı akışta bulunan ilk elemanı (yani yani bu senaryo da en küçük elemanı) alır.
+        // Bu işlem bir Optional döndürür, çünkü akışta hiç eleman kalmamış olabilir
+        // (filtreleme nedeniyle veya başka bir sebepten dolayı)
+collect(Collectors.toList()) - Java'nın Stream API'sindeki bir işlemdir.
+        // Bu işlem, bir stream'de işlenmiş olan elemanları bir listeye toplar.
  Java'da method reference, lambda ifadelerine bir alternatif olarak sunulan bir özelliktir.
  Method reference, zaten tanımlanmış bir metodu doğrudan bir fonksiyonel arayüze atamak için kullanılır.
  Bu, bazen bir lambda ifadesinden daha okunabilir bir kod yazmamıza olanak tanır.
+ Java'da :: işareti, "Method Reference" olarak adlandırılır.
+Bir metodun doğrudan referansını alarak lambda ifadeleri yazmadan kullanmanızı sağlar.
+allMatch metodu, akıştaki (stream) tüm öğelerin belirli bir koşulu karşılayıp karşılamadığını
+        // kontrol eder. Eğer akıştaki tüm öğeler bu koşulu sağlarsa true döndürür,
+        // aksi takdirde false döndürür.(VE gibi)
+anyMatch,Akıştaki herhangi bir elemanın belirli bir koşulu karşılayıp karşılamadığını kontrol eder.
+        //Eğer akıştaki elemanlardan en az biri koşulu karşılıyorsa true döndürür, yoksa false döndürür.(VEYA gibi
+noneMatch, Akıştaki hiçbir elemanın belirli bir koşulu karşılamadığını kontrol eder.
+        //Eğer akıştaki hiçbir eleman koşulu karşılamıyorsa true döndürür, aksi takdirde false döndürür.
+a) sorted, Stream içerisindeki elemanları doğal sıralamasına göre sıralar.(kucukten buyuge)
+             //Özel bir sıralama için bir Comparator’da alabilir.
+b) Comparator.comparing, belirli bir özelliğe göre elemanları sıralamak için bir Comparator oluşturur.
+c) reversed, Bir Comparator'ın sıralama sırasını tersine çevirir.
+d) findFirst, Stream'deki ilk elemanı döndüren bir Optional döner.
+a) skip, Belirtilen sayıda elemanı Stream'den atlar. Burda ilk 2'sini atladik
+b) collect(Collectors.toList()), Stream içerisindeki elemanları bir listeye dönüştürür.
+Java'da "Utils" (fayda-araclar-utilities) class'i oluşturmanın temel mantığı,
+        belirli bir konsept veya işlevsellikle ilgili yardımcı (helper) metotları bir araya toplamaktır.
+        Bu class'lar genellikle static metotlardan oluşur ve doğrudan class adı üzerinden çağrılırlar.
+        Buraya Java'da olmayan ama bizim surekli projemizde kullandigimiz bir islevi method olarak ekleriz
+        ve onu cagirip kullaniriz. Amaca uygun yeni methodlar olusturabiliriz.
+
+ Ornegin; D33lambda'daki class'larda /*Hep ekrana bir boslukla yazdirmak icin
+forEach(t -> System.out.print(t+" ") kullandik. For each icini
+method haline getirelim ve cagiralim
+
+ POJO==>Plain Old Java Object -Düz Eski Java Nesnesi
+       Birçok uygulamada, veriyi bir katmandan diğerine taşımak için POJO sınıfları kullanılır. (API)
