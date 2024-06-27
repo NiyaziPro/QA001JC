@@ -13,6 +13,7 @@ public class LambdaSoru01 {
 
 
         List<Integer> liste = new ArrayList<>(Arrays.asList(8, 13, 5, 6, 7, 8, 11, 16, 8, 7, 3, 2));
+
         einzelneElementeInListeMitLeerzeichen(liste); // 8 13 5 6 7 11 16 3 2
 
 
